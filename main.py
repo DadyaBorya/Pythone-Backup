@@ -7,6 +7,7 @@ def main():
     mega = MegaCloud(config["Mega"]["username"], config["Mega"]["password"])
     try:
         mega.login()
+        mega.upload_file("olya.txt", "Olga/Boris")
     except Exception as e:
         logger.error(e)
 

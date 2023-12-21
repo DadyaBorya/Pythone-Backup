@@ -70,7 +70,7 @@ class MegaCloud(Cloud):
                 return True
 
             file_modify = creation_date(path)
-
+            logger.success(f"Compare file {path}:{file_modify} with cloud file {cloud_file_path}:{cloud_file[1]['ts']}")
             return file_modify > cloud_file[1]["ts"]
         except Exception as e:
             raise e
