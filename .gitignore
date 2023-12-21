@@ -1,3 +1,5 @@
 .venv
 .idea
 .vscode
+accounts_config.yml
+__pycache__
